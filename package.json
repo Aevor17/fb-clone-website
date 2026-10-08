@@ -1,0 +1,21 @@
+{
+  "name": "fb-clone-website",
+  "version": "1.0.0",
+  "description": "Facebook-inspired social media site with a simple backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "facebook",
+    "social",
+    "clone",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

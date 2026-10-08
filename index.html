@@ -1,11 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="brand-box">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Facebook" />
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-item active" href="#"><i class="fa-solid fa-house"></i></a>
+          <a class="nav-item" href="#"><i class="fa-solid fa-user-group"></i></a>
+          <a class="nav-item" href="#"><i class="fa-solid fa-clapperboard"></i></a>
+          <a class="nav-item" href="#"><i class="fa-regular fa-circle-play"></i></a>
+          <a class="nav-item" href="#"><i class="fa-solid fa-shop"></i></a>
+        </nav>
+
+        <div class="topbar-right">
+          <button class="icon-btn"><i class="fa-solid fa-plus"></i></button>
+          <button class="icon-btn"><i class="fa-brands fa-facebook-messenger"></i></button>
+          <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Profile" class="avatar small" />
+        </div>
+      </header>
+
+      <div class="content-layout">
+        <aside class="sidebar left-sidebar">
+          <div class="profile-card">
+            <img
+              class="cover"
+              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80"
+              alt="Cover"
+            />
+            <div class="profile-body">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+                alt="User profile"
+                class="avatar large"
+              />
+              <h3>John Carter</h3>
+              <p>Product Designer</p>
+            </div>
+          </div>
+
+          <div class="menu-group">
+            <h4>Shortcuts</h4>
+            <ul>
+              <li><span class="menu-icon blue"><i class="fa-solid fa-user-group"></i></span> Friends</li>
+              <li><span class="menu-icon purple"><i class="fa-solid fa-clock"></i></span> Memories</li>
+              <li><span class="menu-icon green"><i class="fa-solid fa-bookmark"></i></span> Saved</li>
+              <li><span class="menu-icon orange"><i class="fa-solid fa-flag"></i></span> Pages</li>
+            </ul>
+          </div>
+        </aside>
+
+        <main class="feed-column">
+          <section class="stories">
+            <article class="story story-one">
+              <div class="story-overlay"></div>
+              <div class="story-user">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Story" class="avatar small" />
+                <span>Sarah</span>
+              </div>
+            </article>
+            <article class="story story-two">
+              <div class="story-overlay"></div>
+              <div class="story-user">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Story" class="avatar small" />
+                <span>Alex</span>
+              </div>
+            </article>
+            <article class="story story-three">
+              <div class="story-overlay"></div>
+              <div class="story-user">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Story" class="avatar small" />
+                <span>Emma</span>
+              </div>
+            </article>
+            <article class="story story-four">
+              <div class="story-overlay"></div>
+              <div class="story-user">
+                <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=200&q=80" alt="Story" class="avatar small" />
+                <span>James</span>
+              </div>
+            </article>
+          </section>
+
+          <section class="composer card">
+            <div class="composer-top">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Your profile" class="avatar small" />
+              <input type="text" placeholder="What's on your mind, John?" />
+            </div>
+            <div class="composer-actions">
+              <button><i class="fa-solid fa-video"></i> Live video</button>
+              <button><i class="fa-solid fa-image"></i> Photo</button>
+              <button><i class="fa-regular fa-face-smile"></i> Feeling</button>
+            </div>
+          </section>
+
+          <article class="post card">
+            <div class="post-header">
+              <div class="post-user">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Sarah" class="avatar small" />
+                <div>
+                  <h4>Sarah Johnson</h4>
+                  <p>2 hours ago</p>
+                </div>
+              </div>
+              <button class="more-btn"><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+            <p class="post-text">Enjoying a peaceful morning with coffee and a great view. Nothing beats a productive start to the day.</p>
+            <img class="post-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Coffee and view" />
+            <div class="post-stats">
+              <span><i class="fa-solid fa-thumbs-up"></i> 1.2k</span>
+              <span>324 comments</span>
+              <span>86 shares</span>
+            </div>
+            <div class="post-actions">
+              <button><i class="fa-regular fa-thumbs-up"></i> Like</button>
+              <button><i class="fa-regular fa-comment"></i> Comment</button>
+              <button><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+          </article>
+
+          <article class="post card">
+            <div class="post-header">
+              <div class="post-user">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Alex" class="avatar small" />
+                <div>
+                  <h4>Alex Morgan</h4>
+                  <p>Yesterday</p>
+                </div>
+              </div>
+              <button class="more-btn"><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+            <p class="post-text">Team meeting went great today. Proud of what we’ve built and excited for what’s next.</p>
+            <div class="mini-gallery">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=700&q=80" alt="Meeting room" />
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Office friends" />
+            </div>
+            <div class="post-stats">
+              <span><i class="fa-solid fa-thumbs-up"></i> 842</span>
+              <span>210 comments</span>
+              <span>54 shares</span>
+            </div>
+            <div class="post-actions">
+              <button><i class="fa-regular fa-thumbs-up"></i> Like</button>
+              <button><i class="fa-regular fa-comment"></i> Comment</button>
+              <button><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+          </article>
+        </main>
+
+        <aside class="sidebar right-sidebar">
+          <div class="menu-group">
+            <h4>Birthdays</h4>
+            <div class="birthday-card">
+              <div class="gift-badge"><i class="fa-solid fa-gift"></i></div>
+              <p><strong>Emma Wilson</strong> has a birthday today.</p>
+            </div>
+          </div>
+
+          <div class="menu-group">
+            <h4>Contacts</h4>
+            <ul class="contact-list">
+              <li><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Emma" class="avatar small" /> Emma</li>
+              <li><img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=200&q=80" alt="James" class="avatar small" /> James</li>
+              <li><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="John" class="avatar small" /> John</li>
+              <li><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Sarah" class="avatar small" /> Sarah</li>
+              <li><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Alex" class="avatar small" /> Alex</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
 </html>
